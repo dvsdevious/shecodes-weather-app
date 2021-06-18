@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <form id="search">
+        <input 
+          id="search-city-input"
+          class="typebox"
+          type="text"
+          class="rounded-pill"
+          alt="..."
+          placeholder="    Search the city..."
+        />
+        <input type="button" value="search" class="searchbutton" />
+      </form>
+
+      <h1 id="city">
+      </h1>
+      <div id="date"> Friday 22:00</div>
+      <div id="description"></div>
+      <h2> 
+        <span id = "temperature"></span>
+        <span class="units">℃ | <a href="#" id="fahrenheit-link">℉</a> </span>
+      </h2>
+    </br>
+      <h4>The forecast for the next 5 days</h4>
+
+    <div class="container">
+       <div class="row">
+        <div class="col">Monday</div>
+        <div class="col">Tuesday</div>
+        <div class="col">Wednesday</div>
+        <div class="col">Thursday</div>
+        <div class="col">Friday</div>
+      </div>
+      <div class="row">
+        <div class="col">☀️27℃</div>
+        <div class="col">🌤29℃</div>
+        <div class="col">🌩25℃</div>
+        <div class="col">🌧18℃</div>
+        <div class="col">🌧15℃</div>
+      </div>
+    </div>
+    
+<script src="script.js"></script>
+
+
+  </body>
+</html>

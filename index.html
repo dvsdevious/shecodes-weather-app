@@ -15,54 +15,52 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="weather-app">
-      <div class="content">
-        <form id="search">
-          <input 
-            id="search-city-input"
-            class="typebox"
-            type="text"
-            class="rounded-pill"
-            alt="..."
-            placeholder="    Search the city..."
-          />
-          <input type="button" value="search" class="searchbutton" />
-        </form>
-
-      <h1 id="city">
-      </h1>
-      <ul>
-        <li id="date"> </li>
-        <li id="description"> </li>
-      </ul>
-      <div class="row"> 
-        <div class="col-6">
-          <ul>
-            <li id = "temperature"></li>
-            <li class="units">℃ | <a href="#" id="fahrenheit-link">℉</a></li>
-          </ul>
+    <div class="weather-app-wrapper">
+      <div class="weather-app">
+        <div class="content">
+          <form id="search">
+            <input
+              id="search-city-input"
+              class="typebox"
+              type="text"
+              class="rounded-pill"
+              alt="..."
+              placeholder="    Search the city..."
+            />
+            <input type="button" value="search" class="searchbutton" />
+          </form>
         </div>
-       <div class="col-6">
+
+        <h1 id="city"></h1>
+        <ul>
+          <li id="date"></li>
+          <li id="description"></li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
             <ul>
-              <li>
-                Precipitation: 0%
-              </li>
-              <li>
-                Humidity: 73%
-              </li>
-              <li>
-                Wind: 2 km/h
-              </li>
+              <li id="temperature"></li>
+              <li class="units">℃ | <a href="#" id="fahrenheit-link">℉</a></li>
             </ul>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Precipitation: 0%</li>
+              <li>Humidity: 73%</li>
+              <li>Wind: 2 km/h</li>
+            </ul>
+          </div>
         </div>
-        <small>
-          <a href="https://github.com/dvsdevious/shecodes-weather-app" target="_blank">Open-source code</a> by Daria S.
-        </small>
       </div>
-    </div> 
-    </br>
-    
-<script src="script.js"></script>
-
+      <small>
+        <a
+          href="https://github.com/dvsdevious/shecodes-weather-app"
+          target="_blank"
+          >Open-source code</a
+        >
+        by Daria S.
+      </small>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>

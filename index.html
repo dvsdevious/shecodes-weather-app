@@ -15,18 +15,19 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="content">
-      <form id="search">
-        <input 
-          id="search-city-input"
-          class="typebox"
-          type="text"
-          class="rounded-pill"
-          alt="..."
-          placeholder="    Search the city..."
-        />
-        <input type="button" value="search" class="searchbutton" />
-      </form>
+    <div class="weather-app">
+      <div class="content">
+        <form id="search">
+          <input 
+            id="search-city-input"
+            class="typebox"
+            type="text"
+            class="rounded-pill"
+            alt="..."
+            placeholder="    Search the city..."
+          />
+          <input type="button" value="search" class="searchbutton" />
+        </form>
 
       <h1 id="city">
       </h1>
@@ -41,7 +42,7 @@
             <li class="units">℃ | <a href="#" id="fahrenheit-link">℉</a></li>
           </ul>
         </div>
-        <div class="col-6">
+       <div class="col-6">
             <ul>
               <li>
                 Precipitation: 0%
@@ -55,32 +56,13 @@
             </ul>
         </div>
         <small>
-          <a href=""></a>Open-source code, by Daria S.
+          <a href="https://github.com/dvsdevious/shecodes-weather-app" target="_blank">Open-source code</a> by Daria S.
         </small>
       </div>
+    </div> 
     </br>
-      <h4>The forecast for the next 5 days</h4>
-
-    <div class="container">
-       <div class="row">
-        <div class="col">Monday</div>
-        <div class="col">Tuesday</div>
-        <div class="col">Wednesday</div>
-        <div class="col">Thursday</div>
-        <div class="col">Friday</div>
-      </div>
-      <div class="row">
-        <div class="col">☀️27℃</div>
-        <div class="col">🌤29℃</div>
-        <div class="col">🌩25℃</div>
-        <div class="col">🌧18℃</div>
-        <div class="col">🌧15℃</div>
-      </div>
-    </div>
     
 <script src="script.js"></script>
-
-Link to my GitHub repo: https://github.com/dvsdevious/shecodes-weather-app.git
 
   </body>
 </html>

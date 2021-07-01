@@ -12,13 +12,18 @@ li {
   padding: 0;
   line-height: 19px;
 }
-.searchbutton {
-  color: white;
-  background-color: #ba181b;
-  border-color: #ba181b;
-  border-radius: 30px;
-  padding: 3px 15px;
+.btn-primary {
+  padding: 3px 5px;
+  background-color: #a4161a;
 }
+.typebox {
+  width: 600px;
+  box-shadow: 8px 3px 3px lightgrey;
+  border-radius: 5px;
+  border-color: #dadde1;
+  margin-top: 5%;
+}
+
 .weather-app-wrapper {
   max-width: 750px;
   margin: 30px auto;
@@ -29,13 +34,6 @@ li {
   border-radius: 5px;
 }
 
-.typebox {
-  width: 600px;
-  box-shadow: 8px 3px 3px grey;
-  border-radius: 30px;
-  border-color: #660708;
-  margin-top: 10%;
-}
 .overview {
   margin-bottom: 20px;
 }
@@ -52,4 +50,12 @@ li {
   position: relative;
   font-size: 16px;
   top: -34px;
+}
+.weather-temperature .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+.weather-temperature .active:hover {
+  text-decoration: none;
 }

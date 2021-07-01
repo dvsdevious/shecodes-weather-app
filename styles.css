@@ -41,6 +41,7 @@ li {
 }
 .weather-temperature img {
   margin-right: 10px;
+  margin-top: -13px;
 }
 .weather-temperature strong {
   font-size: 60px;

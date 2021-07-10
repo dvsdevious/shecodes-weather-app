@@ -22,6 +22,12 @@ function showDate(date) {
   return `${currentDay}, ${hours}:${minutes}`;
 }
 
+function displayForecast () {
+  let forecastElement = document.querySelector(#forecast);
+
+  forecastElement.innerHTML = "Forecast"
+}
+
 let dateDisplay = document.querySelector("#date");
 let currentTime = new Date();
 dateDisplay.innerHTML = showDate(currentTime);
@@ -51,6 +57,8 @@ function displayWeather(response) {
   document
     .querySelector("#icon")
     .setAttribute("alt", response.data.weather[0].description);
+
+    
 }
 function search(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=d2cfa328408732737947819ec4e29b91&units=metric`;
@@ -66,6 +74,7 @@ let cityForm = document.querySelector("#search");
 cityForm.addEventListener("submit", handleSubmit);
 
 search("London");
+
 
 function convertToFahrenheit(event) {
   event.preventDefault();
@@ -88,3 +97,4 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", convertToCelcius);
+
